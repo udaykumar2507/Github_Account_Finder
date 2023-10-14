@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@1,300&family=Rubik+Puddles&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+input, button {
+    padding: 5px;
+}
+
+.Search {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    display: block;
+}
+
+.Search input:focus-visible {
+    outline: 2px solid blueviolet;
+}
+
+.btn:hover {
+    background-color: rgb(66, 6, 121);
+    color: white;
+}
+
+.btn:active {
+    background-color: rgb(178, 106, 245);
+    color: white;
+}
+
+/* Card container */
+.profile {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    padding: 4rem 4rem;
+}
+
+.profile:hover {
+    transform: rotate(-3deg) scale(1.01);
+    transition: 0.5s ease-in;
+}
+
+.image {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.top_section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+.top_left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.top_section button {
+    align-self: center;
+}
+
+.ABOUT {
+    margin: 2rem;
+}
+
+.status {
+    display: grid;
+    margin: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.follower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
